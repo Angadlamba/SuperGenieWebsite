@@ -1,0 +1,158 @@
+@font-face {
+    font-family: opensans_light;
+    src: url(../fonts/OPENSANS-LIGHT.TTF);
+}
+
+@font-face {
+    font-family: opensans_regular;
+    src: url(../fonts/OPENSANS-REGULAR.TTF);
+}
+
+body {
+	font-family: opensans_light ,'Helvetica Neue', Helvetica;
+	background-color: #30373b;
+}
+
+.main {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.row {
+	margin: 0;
+}
+
+.header {
+	height: auto;
+	background-image: url('../images/top_pattern_1960x640.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header .logo img {
+	height: 80px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.header .logo span {
+	font-size: 20px;
+	font-family: Metamorphous;
+	margin-top: 10px;
+}
+
+.header .heading {
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.header .subtitle {
+	font-size: 18px;
+	font-weight: 200;
+	padding-bottom: 30px;
+}
+
+.body {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.body .row{
+	margin-bottom: 40px;
+}
+
+.body .icon {
+	width: 15%;
+	float: left;
+}
+
+.body .icon i {
+	font-size: 24px;
+    background-color: #;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.body .benefit {
+	width: 80%;
+	float: right;
+}
+
+.body .heading {
+	margin-top: 0px;
+	font-family: opensans_regular;
+	color: #ececec;
+	font-size: 24px;
+	line-height: 1.3;
+}
+
+.body .description {
+	color: #ddd;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+	.body .icon {
+		width: 15%;
+	}	
+
+	.body .benefit {
+		width: 75%;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+	.body .icon {
+		width: 100%;
+		float: none;
+	}	
+
+	.body .benefit {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.body .row {
+		margin-bottom: 0px;
+	}
+
+	.body .tile {
+		margin-bottom: 30px;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 639px) {
+	.body .icon {
+		width: 100%;
+		float: none;
+	}	
+
+	.body .benefit {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.body .row {
+		margin-bottom: 0px;
+	}
+
+	.body .tile {
+		margin-bottom: 30px;
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

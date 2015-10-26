@@ -1,0 +1,752 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Landing Sumo - Theme 13
+ * URL: http://LandingSumo.com
+ * Version: 1.0
+ */
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+
+/* Import fonts */
+	/*@import url(http://fonts.googleapis.com/css?family=Raleway:900,700,400);*/
+@font-face {
+	font-family: genie;
+	src: url(../fonts/openSans/OPENSANS-LIGHT.TTF);
+}
+
+* { 
+	margin: 0;
+	padding: 0px;
+    font-family: genie;
+} 
+body { 
+	background: #fff; 
+	margin: 0; 
+	color: #5a5a5a;
+	font-family: genie;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: genie;
+	font-weight: 200;
+}
+
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+    font-family: genie;
+	line-height: 28px;
+	color: #666; 
+	margin-top: 10px; 
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width:100%;
+}
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+	color: white;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#696E74;
+}
+
+.nopadding {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+/* Bootstrap Modification */
+
+.navbar-inverse {
+	background: transparent;
+	border: transparent;
+}
+
+.zero {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* FORM CONFIGURATION */
+
+input {
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 2px;
+	line-height: 20px;
+	padding: 11px 30px 12px;
+	border: 1px solid #b9b9af;
+	background-color: #fff;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.subscribe-input {
+	float: left;
+	width: 65%;
+	text-align: center;
+	margin-right: 2px;
+}
+
+.subscribe-submit {
+	right: 0;
+	text-align: center;
+}
+
+
+.btn-register {
+	margin-top: 15px;
+	border-radius: 50px;
+	margin-right: 10px;
+	top: 0px;
+	float: right;
+	font-size: 16px;
+}
+
+.btn-sub {
+	border-radius: 5px;
+	background-color: #1E87CB;
+}
+
+.btn-info {
+	border-color: #1E87CB;
+}
+
+h2 {
+	line-height: 30px;
+}
+
+/* HEADER SECTION */
+#header {
+	background: url(../img/websiteAssets/background/Pattern.png) no-repeat center top;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	padding-left: 7.81vw;
+	padding-right: 7.81vw;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header h1 {
+	color: black;
+	font-size: 4.8vw;
+	letter-spacing: 2px;
+	font-family: genie;
+	padding-top: 18px;
+	margin: 0px;
+}
+
+#header h3 {
+	color: black;
+	font-size: 2.63vw;
+	font-family:  genie;
+	text-align: center;
+	padding-top: 18px;
+	margin: 0px;
+}
+#header .genie {
+	width: 15.33vw;
+	content: url("../img/websiteAssets/web1024x640/Header/icon_1024x640.png")
+}
+
+#header .supergenie {
+	content: url("../img/websiteAssets/web1024x640/Header/font_1024x640.png");
+	padding-top: 60px;
+	width: 35.15vw
+}
+
+#header .rowInput {
+	padding-top: 54px;
+}
+#header .rowInput2 {
+	padding-top: 45px;
+	margin-left: 15px;
+}
+
+#header input {
+	border-color: black;
+	border-width: 2px;
+	border-radius: 3px;
+	margin-right: 3.9vw;
+	font-size: 1.46vw;
+	width: 36.13vw;
+	height: 4.19vw;
+}
+
+#header .buttonDesktop {
+	font-size: 1.46vw;
+	width: 14.35vw;
+	height: 4.19vw;
+}
+#header .buttonOthers {
+	display: none;
+}
+#header .logo {
+	border-radius: 5px;
+	width: 16vw;
+}
+
+#header .mobile {
+	content: url("../img/websiteAssets/web1024x640/Header/mobile_1024x640.png");
+	float: right;
+	width: 22.5vw;
+}
+
+#header .logo1 {
+	content: url("../img/websiteAssets/web1024x640/Header/whatsapp_1024x640.png")
+}
+#header .logo2 {
+	content: url("../img/websiteAssets/web1024x640/Header/googleplay_1024x640.png")
+}
+#header .logo3 {
+	content: url("../img/websiteAssets/web1024x640/Header/appstore_1024x640.png")
+}
+
+/* HOW IT WORKS */
+#works {
+	background-color: #ffffff;
+	background: url("../img/websiteAssets/web1024x640/Footer/collage_1024x640.png");
+	background-attachment: relative;
+	height: auto;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#works h1 {
+	padding-top: 15px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+#works img {
+	padding-top: 15px;
+	width: 26.26vw;
+	width: 22.54vw;
+}
+
+#works #carousel-example-generic {
+	display: none;
+}
+#works .mob1 {
+	width: 22.60vw;
+}
+#works .mob3 {
+	width: 23.07vw;
+}
+
+/* Payments */
+#payment {
+	background-color: white;
+	background-attachment: relative;
+	height: auto;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#payment h1 {
+	color: black;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 4.76vw;
+	font-family: genie;
+}
+#payment h2 {
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 60px;
+	font-size: 1.95vw;
+	font-family: genie;
+}
+#payment img {
+	padding-top: 30px;
+	width: 20vw;
+}
+
+/* Food */
+#food {
+	background-color: #C62828;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+
+#food img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 186px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#food .row img {
+	position: relative;
+	margin-left: 10.15vw;
+	margin-right: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#food h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#food h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* Travel */
+#travel {
+	background-color: #1565C0;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+
+#travel img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 168px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#travel .row img {
+	position: relative;
+	margin-right: 11vw;
+	margin-left: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#travel h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#travel h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* Movies */
+#movies {
+	background-color: #DA4A14;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+
+#movies img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 186px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#movies .row img {
+	position: relative;
+	margin-left: 10.15vw;
+	margin-right: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#movies h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#movies h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* Groceries */
+#groceries {
+	background-color: #2E7D32;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+
+#groceries img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 168px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#groceries .row img {
+	position: relative;
+	margin-right: 11vw;
+	margin-left: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#groceries h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#groceries h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* Shopping */
+#shopping {
+	background-color: #EF6C00;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+
+#shopping img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 186px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#shopping .row img {
+	position: relative;
+	margin-left: 10.15vw;
+	margin-right: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#shopping h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#shopping h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* Bill */
+#bill {
+	background-color: #37474F;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+
+#bill img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 168px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#bill .row img {
+	position: relative;
+	margin-right: 11vw;
+	margin-left: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#bill h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#bill h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* Hotel */
+#hotel {
+	background-color: #4527A0;
+	width: 100%;
+	height: auto;;
+	color: white;
+}
+
+#hotel img {
+	position: absolute;
+	margin-left: 8.125vw;
+	margin-right: 8.125vw;
+	width: 83.75vw;
+	padding-top: 186px;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+#hotel .row img {
+	position: relative;
+	margin-left: 10.15vw;
+	margin-right: 0vw;
+	width: 22.34vw;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	z-index: 2;
+}
+
+#hotel h1 {
+	color: white;
+	font-size: 4.76vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 40px;
+}
+
+#hotel h2 {
+	color: white;
+	font-size: 1.95vw;
+	font-family: genie;
+	padding-left: 4.21vw;
+	padding-top: 28px;
+}
+
+/* FOOTER */
+#footer {
+	background: url(../img/websiteAssets/web1024x640/Footer/collage_1024x640.png) no-repeat center top;
+	background-attachment: relative;
+	background-position: center center;
+	padding-bottom: 186px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#footer h1 {
+	color: white;
+	font-size: 5vw;
+	letter-spacing: 2px;
+	padding-top: 186px;
+	text-align: center;
+	margin-left: 25%;
+}
+
+#footer h3 {
+	color: white;
+	font-size: 25.6px;
+	letter-spacing: 2px;
+	padding-top: 24px;
+	text-align: center;
+	margin-left: 25%;
+}
+
+#footer .logo1 {
+	padding-top: 72px;
+	text-align: center;
+	margin-left: 25%;
+}
+#footer .logo2 {
+	padding-top: 72px;
+	text-align: center;
+}
+#footer .logo3 {
+	padding-top: 72px;
+	text-align: center;
+}
+#footer .logo {
+	width: 13.75vw;
+}
+
+#footer .rowInput {
+	padding-top: 54px;
+}
+#footer input {
+	border-color: black;
+	border-width: 2px;
+	border-radius: 3px;
+	margin-left: 25%;
+	margin-right: 3.125vw;
+	font-size: 1.5vw;
+	width: 36.13vw;
+	height: 43px;
+}
+#footer .buttonDesktop {
+	font-size: 1.5vw;
+	width: 10vw;
+	height: 43px;
+}
+#footer .buttonOthers {
+	display: none;
+}
+
+
+/* CREDIT */
+#credits {
+	background: black;
+	padding: 24px;
+	padding-left: 34px;
+	padding-right: 34px;
+	font-size: 1.5vw;
+	color: white;
+	text-align: center;
+}
+
+#credits .mobile {
+	display: none;
+}
+
+#credits .copyright {
+	font-size: 1vw;
+	text-align: center;
+}
+

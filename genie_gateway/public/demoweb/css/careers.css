@@ -1,0 +1,227 @@
+@font-face {
+    font-family: opensans_light;
+    src: url(../fonts/OPENSANS-LIGHT.TTF);
+}
+
+body {
+	font-family: opensans_light ,'Helvetica Neue', Helvetica;
+	background-color: #30373b;
+}
+
+.main {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.row {
+	margin: 0;
+}
+
+.header {
+	height: auto;
+	background-image: url('../images/top_pattern_1960x640.png');
+	background-repeat: no-repeat;
+}
+
+.header .logo img {
+	height: 80px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.header .logo span {
+	font-size: 20px;
+	font-family: Metamorphous;
+	margin-top: 10px;
+}
+
+.header .subtitle {
+	padding-top: 20px;
+	font-size: 2.4vw;
+	font-weight: 200;
+	padding-bottom: 0px;
+}
+
+.header .subtitle a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 100;
+	font-size: 2.4vw;
+}
+
+.header .subtitle .toplink:first-child {
+	border-bottom: 4px solid #26ACED;
+}
+
+.slider {
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+	background-position: center;
+	height: 242px;
+	max-height: 242px;
+}
+
+#technology .slider {
+	background: url('../images/Tech_image_1960x640.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#customersuccess .slider {
+	background: url('../images/Customer_success_Image_1960x640.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#marketing .slider {
+	background: url('../images/Marketing_image_1960x640.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.resumetext {
+	color: #ececec;
+	font-size: 18px;
+}
+
+.resumetext a {
+	text-decoration: underline;
+	color: #ececec;
+}
+
+.slider .opacity {
+	margin-left: -20px;
+	margin-right: -20px;
+	height: 238px;
+	z-index: 1;
+	background-color: #666;
+	opacity: 0.7;
+	top: 0px;
+	left: 0px;
+}
+
+.slider .quote {
+	z-index: 2;
+	position: absolute;
+	top: 85px;
+	font-size: 2.2vw;
+	color: #fff;
+}
+
+#technology {
+
+}
+
+#customersuccess {
+	display: none;
+}
+
+#marketing {
+	display: none;
+}
+
+.listings {
+
+}
+
+.listings .row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #364042;
+}
+
+.listings img {
+    color: #fff;
+    max-width: 100%;
+}
+
+.listings .jobtitle {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 35px;
+	color: #fff;
+}
+
+.listings .description {
+	font-size: 18px;
+	color: #ccc;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 1601px) {
+	.slider .quote {
+		font-size: 2vw;
+	}
+}
+
+@media (min-width: 1281px) and (max-width: 1600px) {
+	.slider .quote {
+		font-size: 2.5vw;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+	.header .subtitle a {
+		font-size: 3.5vw;
+	}
+
+	.slider .quote {
+		font-size: 3.5vw;
+	}
+
+	.listings img {
+		max-height: 300px;
+	}
+
+	.listings .jobtitle {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.listings .description {
+		text-align: center;
+	}
+
+	.listings .btn {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+@media (max-width: 639px) {
+
+	.header .subtitle a {
+		font-size: 4vw;
+	}
+
+	.slider .quote {
+		font-size: 5vw;
+	}
+
+	.listings img {
+		max-height: 300px;
+	}
+
+	.listings .jobtitle {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.listings .description {
+		text-align: center;
+	}
+
+	.listings .btn {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}

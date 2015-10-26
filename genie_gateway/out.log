@@ -1,0 +1,45 @@
+Started server at port 3000
+Started server at port 3000
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.NQ.2VpQP4dN0kP2hO20IpznEYsfDaiqWuFBWiEp5JX78IU' }
+404 { error: 'InternalServerError' }
+[0mGET /api/v1/isuserverified [32m200 [0m461.642 ms - 31[0m
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.NQ.2VpQP4dN0kP2hO20IpznEYsfDaiqWuFBWiEp5JX78IU' }
+404 { error: 'InternalServerError' }
+[0mGET /api/v1/isuserverified [32m200 [0m13.041 ms - 31[0m
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.NQ.2VpQP4dN0kP2hO20IpznEYsfDaiqWuFBWiEp5JX78IU' }
+200 { verified: true }
+[0mGET /api/v1/isuserverified [32m200 [0m89.972 ms - 17[0m
+200 { token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.MTA.fWltXWUkBd3FHvGa9eY2y5jNj24kPGsQlAcUnGj0E0U',
+  verification_code: 2796,
+  phone: '+919673261664',
+  name: 'Shabad Lamba' }
+200 { status: 202,
+  response: 
+   { api_id: 'e9a92bf0-20e4-11e5-8500-22000ac89064',
+     message: 'message(s) queued',
+     message_uuid: [ '686b2fab-7be3-4aa9-936f-b4768b7b480e' ] } }
+{ status: 202,
+  response: 
+   { api_id: 'e9a92bf0-20e4-11e5-8500-22000ac89064',
+     message: 'message(s) queued',
+     message_uuid: [ '686b2fab-7be3-4aa9-936f-b4768b7b480e' ] } }
+[0mPOST /api/v1/users [32m200 [0m381.278 ms - 96[0m
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.MTA.fWltXWUkBd3FHvGa9eY2y5jNj24kPGsQlAcUnGj0E0U.NQ.2VpQP4dN0kP2hO20IpznEYsfDaiqWuFBWiEp5JX78IU' }
+500 '<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Not enough or too many segments</h1><h2></h2><pre>Error: Not enough or too many segments\n    at Object.jwt_decode [as decode] (/var/www/staging0.getgenieapp.com/genie_buslogic/node_modules/jwt-simple/lib/jwt.js:62:11)\n    at Object.module.exports.decode (/var/www/staging0.getgenieapp.com/genie_buslogic/lib/jwt.js:18:16)\n    at Object.module.exports.isUserVerified (/var/www/staging0.getgenieapp.com/genie_buslogic/models/users.js:189:20)\n    at /var/www/staging0.getgenieapp.com/genie_buslogic/controllers/users.js:315:9\n    at Layer.handle [as handle_request] (/var/www/staging0.getgenieapp.com/genie_buslogic/node_modules/express/lib/router/layer.js:82:5)\n    at next (/var/www/staging0.getgenieapp.com/genie_buslogic/node_modules/express/lib/router/route.js:110:13)\n    at app.route.all.post.queryData.token (/var/www/staging0.getgenieapp.com/genie_buslogic/controllers/users.js:308:3)\n    at Layer.handle [as handle_request] (/var/www/staging0.getgenieapp.com/genie_buslogic/node_modules/express/lib/router/layer.js:82:5)\n    at next (/var/www/staging0.getgenieapp.com/genie_buslogic/node_modules/express/lib/router/route.js:110:13)\n    at Route.dispatch (/var/www/staging0.getgenieapp.com/genie_buslogic/node_modules/express/lib/router/route.js:91:3)</pre></body></html>'
+[0mGET /api/v1/isuserverified [32m200 [0m253.379 ms - 1405[0m
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.MTA.fWltXWUkBd3FHvGa9eY2y5jNj24kPGsQlAcUnGj0E0U' }
+200 { verified: false }
+[0mGET /api/v1/isuserverified [32m200 [0m7.104 ms - 18[0m
+200 { verified: false }
+[0mPOST /api/v1/verifyuser [32m200 [0m7.531 ms - 18[0m
+200 { verified: false }
+[0mPOST /api/v1/verifyuser [32m200 [0m5.732 ms - 18[0m
+200 { verified: true }
+[0mPOST /api/v1/verifyuser [32m200 [0m8.100 ms - 17[0m
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.MTA.fWltXWUkBd3FHvGa9eY2y5jNj24kPGsQlAcUnGj0E0U' }
+200 { verified: true }
+[0mGET /api/v1/isuserverified [32m200 [0m6.464 ms - 17[0m
+{ token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.MTA.fWltXWUkBd3FHvGa9eY2y5jNj24kPGsQlAcUnGj0E0U',
+  gcm_token: 'fnWn6Bu30c0:APA91bGGmxN4u0qbMAqtCpv0sC4d4B9TqSQIuV6YSmWbZ-GlumGLLVTCoHfWhhBMeYO-vEJBP5SG4Yrdv3ez8HusbYODCMZ3DcvozMrLFesW7niozWf1lNYUY_cEo4D6dlMV40mvbbqq' }
+200 { verified: true, gcm_updated: true }
+[0mPOST /api/v1/updategcm [32m200 [0m9.517 ms - 36[0m

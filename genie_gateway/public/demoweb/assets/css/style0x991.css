@@ -1,0 +1,913 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Landing Sumo - Theme 13
+ * URL: http://LandingSumo.com
+ * Version: 1.0
+ */
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+
+/* Import fonts */
+	/*@import url(http://fonts.googleapis.com/css?family=Raleway:900,700,400);*/
+@font-face {
+	font-family: genie;
+	src: url(../fonts/openSans/OPENSANS-LIGHT.TTF);
+}
+
+* { 
+	margin: 0;
+	padding: 0px;
+    font-family: genie;
+} 
+body { 
+	background: #fff; 
+	margin: 0; 
+	color: #5a5a5a;
+	font-family: genie;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: genie;
+	font-weight: 200;
+	margin: 0px;
+}
+
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+    font-family: genie;
+	line-height: 28px;
+	color: #666; 
+	margin-top: 10px; 
+}
+
+html,
+body {
+	height: 100%;
+	font-family: genie;
+	font-size: 10px;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width:100%;
+}
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+	color: white;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#696E74;
+}
+
+.nopadding {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+/* Bootstrap Modification */
+
+.navbar-inverse {
+	background: transparent;
+	border: transparent;
+}
+
+.zero {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* FORM CONFIGURATION */
+.subscribe-submit {
+	right: 0;
+	text-align: center;
+}
+
+.btn-sub {
+	border-radius: 5px;
+	background-color: #1E87CB;
+}
+.btn-info {
+	border-color: #1E87CB;
+}
+
+h2 {
+	line-height: 1.4;
+	z-index: 2;
+}
+
+
+/* HEADER SECTION */
+#header {
+	background: url(../img/websiteAssets/background/Pattern.png) no-repeat center top;
+	background-attachment: relative;
+	background-position: center center;
+	height: auto;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header .genie {
+	margin-left: 32.81vw;
+	margin-right/*: 32.81vw;*/
+	width: 34.37vw;
+	padding-top: 28px;
+	content: url("../img/websiteAssets/web640x640/Header/icon_640x640.png")
+}
+
+#header .supergenie {
+	content: url("../img/websiteAssets/web640x640/Header/font_640x640.png");
+	margin-left: 24.65vw;
+	width: 54.68vw;
+	padding-top: 35px;
+}
+
+#header h1 {
+	color: black;
+	font-size: 8.125vw;
+	letter-spacing: 2px;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#header h3 {
+	color: black;
+	font-size: 3.43vw;
+	font-family:  genie;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#header input {
+	display: none;
+}
+#header .buttonDesktop {
+	display: none;
+}
+
+#header .buttonOthers {
+	font-size: 3.43vw;
+	margin-left: 16.40vw;
+	/*margin-right: 16.40vw;*/
+	width: 65.62vw;
+	height: 11.71vw;
+	margin-top: 40px;
+}
+
+#header .logo1 {
+	content: url("../img/websiteAssets/web640x640/Header/whatsapp_640x640.png");
+	margin-left: 26.25vw;
+	/*margin-right: 26.25vw;*/
+	width: 47.5vw;
+	padding-top: 40px;
+
+}
+#header .logo2 {
+	content: url("../img/websiteAssets/web640x640/Header/googleplay_640x640.png");
+	margin-left: 26.25vw;
+	/*margin-right: 26.25vw;*/
+	width: 47.5vw;
+	padding-top: 18px;
+}
+#header .logo3 {
+	content: url("../img/websiteAssets/web640x640/Header/appstore_640x640.png");
+	margin-left: 26.25vw;
+	/*margin-right: 26.25vw;*/
+	width: 47.5vw;
+	padding-top: 18px;
+}
+
+#header .mobile {
+	content: url("../img/websiteAssets/web640x640/Header/mobile_640x640.png");
+	margin-left: 31.25vw;
+	/*margin-right: 31.25vw;*/
+	width: 37.5vw;
+	padding-top: 54px;
+	padding-bottom: 28px;
+}
+
+/* HOW IT WORKS */
+#works {
+	background-color: #ffffff;
+	background: url("../img/websiteAssets/web640x640/footer/collage_640x640.png");
+	background-attachment: relative;
+	height: auto;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#works h1 {
+	color: white;
+	text-align: center;
+	font-size: 10vw;
+	font-family: genie;
+	padding-top: 26px;
+	padding-bottom: 10px;
+}
+#works img {
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+}
+#works .row .col-md-4 {
+	display: none;
+}
+#works .mob4 {
+	width: 37.9vw;
+}
+
+/* Payments */
+#payment {
+	background-color: white;
+	background-attachment: relative;
+	height: auto;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#payment h1 {
+	color: black;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-size: 10vw;
+	font-family: genie;
+}
+#payment h2 {
+	color: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-size: 4vw;
+	font-family: genie;
+}
+#payment img {
+	padding-top: 20px;
+	width: 32.21vw;
+}
+
+/* Food */
+#food {
+	background-color: #C62828;
+	width: 100%;
+	height: 110vw;
+	color: white;
+}
+
+#food img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Food/food_bubbles_640x640.png');
+	margin-left: 15.625vw;
+	margin-right: 15.625vw;
+	width: 68.75vw;
+	padding-top: 160px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#food .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_food_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#food h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#food h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Travel */
+#travel {
+	background-color: #1565C0;
+	width: 100%;
+	height: 110vw;
+	color: white;
+}
+
+#travel img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Travel/travel_bubbles_640x640.png');
+	margin-left: 18.75vw;
+	margin-right: 16.25vw;
+	width: 65vw;
+	padding-top: 196px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#travel .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_travel_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#travel h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#travel h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Movies */
+#movies {
+	background-color: #DA4A14;
+	width: 100%;
+	height: 114vw;
+	color: white;
+}
+
+#movies img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Movies/Movies_bubbles_640x640.png');
+	margin-left: 18.75vw;
+	margin-right: 17.34vw;
+	width: 63.90vw;
+	padding-top: 184px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#movies .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_movies_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#movies h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#movies h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+/* Groceries */
+#groceries {
+	background-color: #2E7D32;
+	width: 100%;
+	height: 110vw;
+	color: white;
+}
+
+#groceries img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Groceries/groceries_bubbles_640x640.png');
+	margin-left: 18.75vw;
+	margin-right: 16.25vw;
+	width: 65vw;
+	padding-top: 196px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#groceries .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_groceries_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#groceries h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#groceries h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+/* Shopping */
+#shopping {
+	background-color: #EF6C00;
+	width: 100%;
+	height: 114vw;
+	color: white;
+}
+
+#shopping img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Shopping/Shopping_bubbles_640x640.png');
+	margin-left: 18.75vw;
+	margin-right: 16.25vw;
+	width: 65vw;
+	padding-top: 186px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#shopping .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_shopping_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#shopping h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#shopping h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+/* Bill */
+#bill {
+	background-color: #37474F;
+	width: 100%;
+	height: 110vw;
+	color: white;
+}
+
+#bill img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Bills/Bills_bubbles_640x640.png');
+	margin-left: 18.75vw;
+	margin-right: 23.43vw;
+	width: 57.81vw;
+	padding-top: 204px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#bill .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_bills_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#bill h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#bill h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Hotel */
+#hotel {
+	background-color: #4527A0;
+	width: 100%;
+	height: 110vw;
+	color: white;
+}
+
+#hotel img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/Hotels/Hotels_bubbles_640x640.png');
+	margin-left: 18.75vw;
+	margin-right: 23.43vw;
+	width: 57.81vw;
+	padding-top: 204px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+
+#hotel .row img {
+	position: absolute;
+	content: url('../img/websiteAssets/web640x640/mockup_hotels_640.png');
+	margin-left: 31.25vw;
+	margin-right: 31.25vw;
+	width: 37.5vw;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+#hotel h1 {
+	color: white;
+	font-size: 10vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 24px;
+}
+
+#hotel h2 {
+	color: white;
+	font-size: 4vw;
+	font-family: genie;
+	text-align: center;
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	.bubbles {
+		display: none;
+	}
+	#header .genie {
+		margin-left: 30vw;
+		width: 38vw;
+		padding-top: 28px;
+	}
+	#header .supergenie {
+		margin-left: 21.5vw;
+		width: 60vw;
+		padding-top: 35px;
+	}
+	#header h1 {
+		font-size: 11vw;
+		letter-spacing: 1px;
+	}
+	#header h3 {
+		font-size: 5vw;
+		padding-top: 10px;
+	}
+	#header .buttonOthers {
+		margin-top: 20px;
+	}
+	#header .logo1 {
+		padding-top: 18px;
+	}
+	#header .mobile{
+		width: 60%; 
+		position: relative;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+		display: block;
+		padding-top: 30px;
+	}
+	#works img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#works .mob4 {
+		width: 60.8%;
+	}
+	
+	#payment h2 {
+		font-size: 6vw;
+	}
+
+	#food {
+		height: auto;
+	}
+	#food .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#travel {
+		height: auto;
+	}
+	#travel .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#movies {
+		height: auto;
+	}
+	#movies .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#groceries {
+		height: auto;
+	}
+	#groceries .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#shopping {
+		height: auto;
+	}
+	#shopping .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#bill {
+		height: auto;
+	}
+	#bill .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+	#hotel {
+		height: auto;
+	}
+	#hotel .row img {
+		margin-left: 0px;
+		margin-right: 0px;
+		position: relative;
+		width: 60%;
+	  	display: block;
+		margin-right: auto;
+	 	margin-left: auto;
+	}
+}
+
+/* FOOTER */
+#footer {
+	background: url(../img/websiteAssets/web640x640/footer/collage_640x640.png) no-repeat center top;
+	background-attachment: relative;
+	background-position: center center;
+	padding-bottom: 100px;	
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#footer h1 {
+	color: white;
+	font-size: 9vw;
+	letter-spacing: 2px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+#footer h3 {
+	color: white;
+	font-size: 5.93vw;
+	letter-spacing: 2px;
+	padding-top: 44px;
+	text-align: center;
+}
+
+#footer .logo1 {
+	padding-top: 40px;
+	text-align: center;
+}
+#footer .logo2 {
+	padding-top: 16px;
+	text-align: center;
+}
+#footer .logo3 {
+	padding-top: 16px;
+	text-align: center;
+}
+#footer .logo {
+	width: 33vw;
+}
+
+#footer input {
+	display: none;
+}
+#footer .buttonDesktop {
+	display: none;
+}
+
+#footer .buttonOthers {
+	font-size: 3.43vw;
+	margin-left: 16.40vw;
+	/*margin-right: 16.40vw;*/
+	width: 65.62vw;
+	height: 11.71vw;
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 540px) {
+	#footer h1 {
+		font-size: 10vw;
+		letter-spacing: 1px;
+	}
+
+	#footer .logo {
+		width: 44vw;
+	}
+
+	#footer h3 {
+		font-size: 6.5vw;
+		letter-spacing: 1px;
+		padding-top: 30px;
+	}
+	#footer .buttonOthers {
+		font-size: 4.2vw;
+	}
+}
+
+/* CREDIT */
+#credits {
+	background: black;
+	padding: 30px;
+	font-size: 3.5vw;
+	color: white;
+	text-align: center;
+}
+
+#credits img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: inline;
+	width: 10%;
+	text-align: right;
+}
+
+#credits .copyright {
+	font-size: 2.2vw;
+}
+
+@media screen and (max-width: 640px) {
+	#credits {
+		font-size: 4vw;
+		padding: 15px;
+	}
+
+	#credits img {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: inline;
+		width: 15%;
+		text-align: right;
+	}
+
+	#credits .copyright {
+		font-size: 2.8vw;
+	}
+}
